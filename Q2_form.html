@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+</head>
+<body>
+    <h1>Feedback Form</h1>
+    <form action="#" method="post">
+        <!-- Dropdown for Feedback Type -->
+        <label >Feedback Type:</label>
+        <select id="feedback-type" name="feedback-type" required>
+            <option value="general">General</option>
+            <option value="bug">Bug Report</option>
+            <option value="suggestion">Suggestion</option>
+        </select><br><br>
+
+        <!-- Textarea for User Message -->
+        <label>Your Message:</label><br>
+        <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+
+        <!-- Radio Buttons for Website Rating -->
+        <label>Website Rating:</label><br>
+        <input type="radio" name="rating" value="1" required>
+        <label >1</label>
+        <input type="radio" name="rating" value="2">
+        <label >2</label>
+        <input type="radio" name="rating" value="3">
+        <label>3</label>
+        <input type="radio" name="rating" value="4">
+        <label >4</label>
+        <input type="radio" name="rating" value="5">
+        <label >5</label><br><br>
+
+        <!-- Number Input for Age -->
+        <label>Your Age:</label>
+        <input type="number"name="age" min="10" max="100" required><br><br>
+
+        <!-- Email Input (Required) -->
+        <label >Email Address:</label>
+        <input type="email" name="email" required><br><br>
+
+        <!-- Password Input (Minimum 8 characters) -->
+        <label >Password:</label>
+        <input type="password" name="password"  required><br><br>
+
+        <!-- Optional Website URL Input -->
+        <label>Website URL (Optional):</label>
+        <input type="url" name="website"><br><br>
+
+        <!-- Checkbox for Terms and Conditions -->
+        <input type="checkbox" name="terms" required>
+        <label >I agree to the terms and conditions</label><br><br>
+
+        <!-- Submit Button -->
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
